@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complemento Preparado - Refrigerios Lola</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar al archivo CSS general -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Complemento Preparado</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#descripcion">Descripción</a></li>
+                <li><a href="#nutricion">Información Nutricional</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Descripción -->
+    <section id="descripcion">
+        <h2>Descripción</h2>
+        <p>El complemento preparado es una comida balanceada que incluye una variedad de alimentos cuidadosamente seleccionados para garantizar que los estudiantes reciban una dieta equilibrada. Este refrigerio es ideal para aquellos que necesitan un aporte energético más completo.</p>
+    </section>
+
+    <!-- Sección de Información Nutricional -->
+    <section id="nutricion">
+        <h2>Información Nutricional</h2>
+        <p>El complemento preparado ofrece una combinación de proteínas, carbohidratos y grasas saludables, diseñadas para apoyar el desarrollo y rendimiento de los estudiantes a lo largo del día.</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo: correolola.edu</p>
+        <p>Teléfono: +123 456 789</p>
+        <p>Horario de atención: Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Lola Gonzalez. Todos los derechos reservados.</p>
+        <a href="politica_privacidad.html">Aviso de Privacidad</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Refrigerios Lola</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar al archivo CSS general -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Iniciar Sesión</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vaso-de-leche.html">Vaso de Leche</a></li>
+                <li><a href="complemento-preparado.html">Complemento Preparado</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Iniciar Sesión -->
+    <section id="login">
+        <h2>Bienvenido</h2>
+        <p>Por favor, ingresa tus credenciales para acceder a tu cuenta.</p>
+
+        <form action="procesar_login.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        
+        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Lola Gonzalez. Todos los derechos reservados.</p>
+        <a href="politica_privacidad.html">Aviso de Privacidad</a>
+    </footer>
+</body>
+</html>

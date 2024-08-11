@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaso de Leche - Refrigerios Lola</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar al archivo CSS general -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Vaso de Leche</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#descripcion">Descripción</a></li>
+                <li><a href="#nutricion">Información Nutricional</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Descripción -->
+    <section id="descripcion">
+        <h2>Descripción</h2>
+        <p>El vaso de leche es una opción ligera que ofrecemos a los estudiantes. Este refrigerio incluye bebidas lácteas variadas, frutas frescas, y productos horneados como panes, proporcionando un equilibrio ideal entre sabor y nutrición.</p>
+    </section>
+
+    <!-- Sección de Información Nutricional -->
+    <section id="nutricion">
+        <h2>Información Nutricional</h2>
+        <p>Cada vaso de leche ofrece un aporte nutricional balanceado, asegurando que los estudiantes reciban la energía y nutrientes necesarios para continuar con su día académico. El refrigerio es rico en calcio, proteínas y vitaminas.</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo: correolola.edu</p>
+        <p>Teléfono: +123 456 789</p>
+        <p>Horario de atención: Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Lola Gonzalez. Todos los derechos reservados.</p>
+        <a href="politica_privacidad.html">Aviso de Privacidad</a>
+    </footer>
+</body>
+</html>

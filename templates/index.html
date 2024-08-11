@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigerios Lola</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Refrigerios Lola</h1>
+        <nav>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#inconformidades">Inconformidades</a></li>
+                <li><a href="#retroalimentacion">Retroalimentación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="https://forms.gle/qYtmYsHZeRb7onz68">Inscripción</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Información -->
+    <section id="informacion">
+        <h2>Información</h2>
+        <p> !Bienvenidos a Refrigerios Lola! Aquí podras ver qué alimentos entregan en la institución Lola Gonzalez. Esto es con el fin de
+            que sepas cuál de los dos refirgerios escoger, si complemento o vaso de leche  </p>
+
+            <h2>Vaso de leche</h2>
+            <p> El vaso de leche,
+                en este lugar lo que buscamos es darle un 
+                alimento ligero a los estudiantes con el cual 
+                se sientan a gusto, en este lugar obtienen 
+                bebidas lácteas variadas, tambien hay frutas, 
+                y comidas como panes que ayudan a un balance 
+                en el alimento de los estudiantes</p>
+                <a href="vaso-de-leche.html"><button type="button">Saber más</button></a>
+
+                <h2>Complemento preparado</h2>
+                <p> En el complemento preparado 
+                    los estudiantes obtienen comidas balanceadas
+                     para el desarrollo de los estudiantes a lo 
+                     largo de su etapa estudiantil, en este lugar,
+                      se les da una comida balanceada en 
+                      azucares, y calorias, todo para cuidar 
+                      a los estudiantes</p>
+                      <a href="complemento-preparado.html"><button type="button">Saber más</button></a>
+                      <br />
+        <img src="imagen-de-la-cafeteria.jpg" alt="Imagen de la cafetería">
+        <h3>Preguntas Frecuentes</h3>
+        <ul>
+            <li>¿Cuáles son los horarios de servicio?</li>
+            <li>¿Qué proveedores utilizan?</li>
+            <li>¿Cómo se garantiza la calidad de los alimentos?</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Inconformidades -->
+    <section id="inconformidades">
+        <h2>Expresa tu Inconformidad</h2>
+        <form action="enviar_inconformidad.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre">
+            
+            <label for="fecha">Fecha del incidente:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora del incidente:</label>
+            <input type="time" id="hora" name="hora" required>
+            
+            <label for="descripcion">Descripción del problema:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            
+            <label for="calificacion">Calificación:</label>
+            <select id="calificacion" name="calificacion">
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Bueno</option>
+                <option value="3">3 - Aceptable</option>
+                <option value="2">2 - Malo</option>
+                <option value="1">1 - Muy malo</option>
+            </select>
+
+            <label for="foto">Adjuntar foto (opcional):</label>
+            <input type="file" id="foto" name="foto">
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Retroalimentación -->
+    <section id="retroalimentacion">
+        <h2>Retroalimentación</h2>
+        <h3>Comentarios Recientes</h3>
+        <ul>
+            <li>"El servicio fue lento, pero la comida estaba buena."</li>
+            <li>"Encontré un problema con la higiene en la preparación de alimentos."</li>
+        </ul>
+        <h3>Estadísticas</h3>
+        <p>Inconformidades resueltas: 85%</p>
+        <p>Tiempo promedio de respuesta: 2 días</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo: correolola.edu</p>
+        <p>Teléfono: +123 456 789</p>
+        <p>Horario de atención: Lunes a Viernes, 6:00 AM - 6:00 PM</p>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Lola Gonzalez. Todos los derechos reservados.</p>
+        <a href="politica_privacidad.html">Aviso de Privacidad</a>
+        <div>
+            <a href="#"><img src="icono_facebook.png" alt="instagram"></a>
+            <a href="#"><img src="icono_twitter.png" alt="pagina lola"></a>
+        </div>
+    </footer>
+</body>
+</html>
